@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.admin.ListAllMoviesController">
+   <children>
+      <TableView fx:id="tabelView" layoutX="14.0" layoutY="50.0" onMouseClicked="#getItem" prefHeight="424.0" prefWidth="581.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="86.0" text="Movie ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="244.0" text="Movie Name" />
+            <TableColumn fx:id="durationColumn" prefWidth="131.0" text="Movie Duration" />
+            <TableColumn fx:id="ratingColumn" prefWidth="119.0" text="Movie Rating" />
+        </columns>
+      </TableView>
+      <AnchorPane fx:id="createEvent" layoutX="595.0" layoutY="50.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="400.0" styleClass="createEvent">
+         <children>
+            <Button layoutX="150.0" layoutY="316.0" mnemonicParsing="false" onAction="#createEvent" styleClass="eventButton" text="Create event" />
+            <DatePicker fx:id="date" layoutX="12.0" layoutY="106.0" promptText="Select date" />
+            <Label layoutX="134.0" layoutY="14.0" text="Create new Event" />
+            <ComboBox fx:id="choseHall" layoutX="245.0" layoutY="164.0" prefHeight="31.0" prefWidth="139.0" promptText="Chose a hall" />
+            <ComboBox fx:id="choseHour" layoutX="240.0" layoutY="106.0" prefWidth="155.0" promptText="Selct hour" />
+            <Label fx:id="selectedMovieForEvent" layoutX="13.0" layoutY="38.0" prefHeight="43.0" prefWidth="375.0" styleClass="selectedMovie" />
+            <TextField fx:id="eventPrice" layoutX="41.0" layoutY="164.0" promptText="Price" />
+            <Label fx:id="errorMessage" layoutX="24.0" layoutY="373.0" prefHeight="21.0" prefWidth="355.0" styleClass="errorMessage" />
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding></AnchorPane>
+      <Label layoutX="99.0" layoutY="18.0" text="Movies list" />
+      <Label layoutX="342.0" layoutY="18.0" text="Select a movie to create an event" />
+   </children>
+</AnchorPane>

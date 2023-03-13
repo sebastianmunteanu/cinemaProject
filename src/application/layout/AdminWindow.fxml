@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AdminController">
+   <top>
+      <AnchorPane prefHeight="66.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="609.0" layoutY="23.0" prefHeight="21.0" prefWidth="267.0" text="You are log in as Administrator" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="50.0" layoutY="33.0" text="Admin Options" />
+            <Button fx:id="insertMovie" layoutX="50.0" layoutY="72.0" mnemonicParsing="false" text="Insert movie" />
+            <Button fx:id="deleteMovie" layoutX="47.0" layoutY="129.0" mnemonicParsing="false" text="Delete movie" />
+            <Button fx:id="listMovies" layoutX="44.0" layoutY="183.0" mnemonicParsing="false" text="See all movies" />
+            <Button fx:id="listUsers" layoutX="50.0" layoutY="240.0" mnemonicParsing="false" text="See all users" />
+            <Button fx:id="listEvents" layoutX="45.0" layoutY="302.0" mnemonicParsing="false" text="See all events" />
+            <Button fx:id="logOut" layoutX="64.0" layoutY="457.0" mnemonicParsing="false" text="Log out" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="center" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="100.0" prefWidth="1000.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <AnchorPane fx:id="movieInfo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="264.0" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Label layoutX="103.0" layoutY="22.0" prefHeight="21.0" prefWidth="77.0" text="Movie info" />
+            <Label fx:id="movieName" layoutX="18.0" layoutY="85.0" prefHeight="45.0" prefWidth="232.0" />
+            <Label fx:id="totalEvents" layoutX="62.0" layoutY="171.0" prefHeight="21.0" prefWidth="140.0" />
+            <Label layoutX="114.0" layoutY="63.0" text="Name" />
+            <Label layoutX="74.0" layoutY="143.0" text="Number of events" />
+            <Label layoutX="91.0" layoutY="260.0" text="Total income" />
+            <Label fx:id="totalIncome" layoutX="23.0" layoutY="290.0" prefHeight="21.0" prefWidth="218.0" />
+            <Label layoutX="32.0" layoutY="201.0" text="Direct buy" />
+            <Label fx:id="directBuy" layoutX="11.0" layoutY="223.0" prefHeight="21.0" prefWidth="109.0" />
+            <Label layoutX="152.0" layoutY="201.0" text="Reservations" />
+            <Label fx:id="reservationIncome" layoutX="140.0" layoutY="223.0" prefHeight="21.0" prefWidth="108.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" right="30.0" />
+         </BorderPane.margin></AnchorPane>
+   </right>
+</BorderPane>

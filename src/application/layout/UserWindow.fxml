@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.TilePane?>
+
+<GridPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.UserController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="201.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="725.0" minWidth="10.0" prefWidth="560.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="123.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="98.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="533.0" minHeight="10.0" prefHeight="502.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="69.0" prefWidth="450.0" GridPane.columnIndex="1">
+         <children>
+            <Label layoutX="87.0" layoutY="18.0" text="You are login as user" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="listMovies" layoutX="43.0" layoutY="43.0" mnemonicParsing="false" text="See all events" />
+            <Button fx:id="listReservations" layoutX="33.0" layoutY="121.0" mnemonicParsing="false" text="See my reservations" />
+            <Button fx:id="logOut" layoutX="68.0" layoutY="294.0" mnemonicParsing="false" text="Log out" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="listField" prefHeight="421.0" prefWidth="600.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

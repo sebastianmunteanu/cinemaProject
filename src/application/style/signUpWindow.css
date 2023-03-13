@@ -1,0 +1,37 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.errorMessage {
+	-fx-alignment: baseline-center;
+	-fx-fit-to-width: true;
+	-fx-border-width: 2px;
+	-fx-background-color: rgb(204,230,255);
+}
+
+.root {
+ 	-fx-background-color:  linear-gradient(lightgray, gray);
+ 	-fx-border-color: white;
+ 	-fx-border-radius: 20;
+ 	-fx-background-radius: 20;
+  
+}
+
+.mainBackgroun {
+	-fx-background-color: none;
+}
+ 
+.submit {
+    -fx-background-radius: 30, 30, 29, 28;
+    -fx-padding: 3px 10px 3px 10px;
+    -fx-background-color: green;
+}
+ 
+.registrationMessage {
+
+}
+
+.insertField {
+	-fx-background-color: transparent;
+	-fx-border-style: solid;
+	-fx-border-width: 0 0 2px 0;
+	-fx-border-color: green;
+}

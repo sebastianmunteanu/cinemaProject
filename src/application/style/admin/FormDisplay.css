@@ -1,0 +1,12 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+Label {
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+}
+
+AnchorPane {
+	-fx-border-width: 2px;
+	-fx-border-radius: 10px;
+	-fx-border-style: solid;
+	-fx-border-color: blue;
+}

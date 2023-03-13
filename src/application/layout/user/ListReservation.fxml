@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.*?>
+<?import de.jensd.fx.glyphs.weathericons.*?>
+<?import de.jensd.fx.glyphs.testapps.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.user.ListReservationController">
+   <children>
+      <AnchorPane layoutX="867.0" layoutY="64.0" prefHeight="370.0" prefWidth="294.0">
+         <children>
+            <Button fx:id="cancelReservation" layoutX="94.0" layoutY="36.0" mnemonicParsing="false" onAction="#cancelReservation" text="Cancel reservation" />
+            <Label fx:id="errorMessage" layoutX="17.0" layoutY="329.0" prefHeight="21.0" prefWidth="295.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tabelView" layoutX="60.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="890.0">
+        <columns>
+          <TableColumn fx:id="movieColumn" prefWidth="188.0" text="Movie Name" />
+            <TableColumn fx:id="dateColumn" minWidth="0.0" prefWidth="201.0" text="Event date" />
+            <TableColumn fx:id="codeColumn" prefWidth="179.0" text="Reservation code" />
+            <TableColumn fx:id="priceColumn" prefWidth="122.0" text="Price" />
+            <TableColumn fx:id="formatDate" prefWidth="194.0" text="Format Data" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

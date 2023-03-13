@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.admin.ListAllUsersController">
+   <children>
+      <TableView fx:id="tabelView" layoutX="39.0" layoutY="31.0" prefHeight="312.0" prefWidth="403.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="UserCode" />
+          <TableColumn fx:id="usernameColumn" prefWidth="127.0" text="UserName" />
+            <TableColumn fx:id="roleColumn" prefWidth="88.0" text="UserRole" />
+            <TableColumn fx:id="statusColumn" prefWidth="110.0" text="UserStatus" />
+        </columns>
+      </TableView>
+      <Button layoutX="487.0" layoutY="59.0" mnemonicParsing="false" onAction="#enableUser" prefHeight="31.0" prefWidth="113.0" text="Enable User" />
+      <Label fx:id="message" layoutX="303.0" layoutY="353.0" />
+      <Button layoutX="492.0" layoutY="115.0" mnemonicParsing="false" onAction="#disableUser" text="Disable User" />
+   </children>
+</AnchorPane>

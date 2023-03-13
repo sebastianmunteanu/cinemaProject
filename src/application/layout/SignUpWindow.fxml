@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="400.0" styleClass="mainBackgroun" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SignUpController">
+   <children>
+      <AnchorPane fx:id="root" prefHeight="750.0" prefWidth="400.0" styleClass="root">
+         <children>
+            <Label layoutX="132.0" layoutY="46.0" styleClass="registrationMessage" text="User Registration" />
+            <Label layoutX="46.0" layoutY="116.0" text="First Name" />
+            <Label layoutX="46.0" layoutY="176.0" text="Last Name" />
+            <Label layoutX="47.0" layoutY="229.0" text="Log in user" />
+            <Label layoutX="52.0" layoutY="291.0" text="Password" />
+            <Label layoutX="22.0" layoutY="465.0" text="Select your role" />
+            <TextField fx:id="lastName" layoutX="147.0" layoutY="164.0" prefHeight="31.0" prefWidth="240.0" styleClass="insertField" />
+            <TextField fx:id="firstName" layoutX="147.0" layoutY="106.0" prefHeight="31.0" prefWidth="240.0" styleClass="insertField" />
+            <Label layoutX="11.0" layoutY="348.0" text="Confirmat Password" />
+            <TextField fx:id="userName" layoutX="147.0" layoutY="216.0" prefHeight="31.0" prefWidth="240.0" styleClass="insertField" />
+            <PasswordField fx:id="password" layoutX="147.0" layoutY="279.0" prefHeight="31.0" prefWidth="240.0" styleClass="insertField" />
+            <PasswordField fx:id="passwordCheck" layoutX="147.0" layoutY="336.0" prefHeight="31.0" prefWidth="240.0" styleClass="insertField" />
+            <Button fx:id="submitButton" layoutX="167.0" layoutY="591.0" mnemonicParsing="false" onAction="#Submit" styleClass="submit" text="Submit" />
+            <Label layoutX="59.0" layoutY="414.0" text="Email" />
+            <TextField fx:id="email" layoutX="147.0" layoutY="401.0" prefHeight="31.0" prefWidth="240.0" styleClass="insertField" />
+            <ComboBox fx:id="roleList" layoutX="149.0" layoutY="457.0" prefHeight="31.0" prefWidth="240.0" promptText="chooseYourRole" styleClass="insertField" />
+            <Label fx:id="errorMessage" layoutX="19.0" layoutY="638.0" prefHeight="21.0" prefWidth="360.0" styleClass="errorMessage" />
+            <Button fx:id="exit" layoutX="278.0" layoutY="41.0" mnemonicParsing="false" text="Exit" />
+         </children></AnchorPane>
+   </children>
+</Pane>

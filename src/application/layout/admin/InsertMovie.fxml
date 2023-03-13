@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.admin.InsertMovieController">
+   <children>
+      <Label layoutX="247.0" layoutY="48.0" text=" Insert a movie" />
+      <Label layoutX="132.0" layoutY="101.0" text="Movie Id" />
+      <Label layoutX="121.0" layoutY="160.0" text="Movie Name" />
+      <Label layoutX="117.0" layoutY="211.0" text="Running time" />
+      <Label layoutX="142.0" layoutY="260.0" text="Rating" />
+      <TextField fx:id="movieId" layoutX="296.0" layoutY="96.0" />
+      <TextField fx:id="movieName" layoutX="296.0" layoutY="155.0" />
+      <TextField fx:id="runningTime" layoutX="296.0" layoutY="206.0" />
+      <TextField fx:id="rating" layoutX="296.0" layoutY="255.0" />
+      <Button fx:id="insert" layoutX="268.0" layoutY="314.0" mnemonicParsing="false" onAction="#Insert" text="Insert" />
+      <Label fx:id="message" layoutX="86.0" layoutY="354.0" prefHeight="21.0" prefWidth="429.0" />
+   </children>
+</AnchorPane>

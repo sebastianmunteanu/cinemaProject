@@ -1,0 +1,60 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.main_container_left {
+	-fx-background-color: lightblue;
+}
+
+.main_container_right {
+	-fx-background-color: aqua;
+	-fx-border-style: solid;
+	-fx-border-width: 2px; 
+}
+
+.signUp {
+	-fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: #78472a;
+}
+
+.signUp:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+
+
+
+.logIn {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #9b9d9e 0%, #7a7c7d 100%),
+            #7a7c7d,
+            #9b9d9e,
+            radial-gradient(center 50% 50%, radius 100%, #7a7c7d, #9b9d9e);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.3em;
+}
+.logIn:hover {
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #9b9d9e 0%, #7a7c7d 100%),
+            #7a7c7d,
+            #9b9d9e,
+            radial-gradient(center 50% 50%, radius 100%, #9b9d9e, #7a7c7d);
+}
+.logIn:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+.logIn Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+.message { 
+ -fx-alignment: center;
+}
